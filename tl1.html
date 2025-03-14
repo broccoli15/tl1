@@ -1,236 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html" />
-    <title>FORM</title>
-    <link rel="stylesheet" href="tl1.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="content">
-      <form action="newacc.php" method="post" id="form-content">
-        <label class="label-1" for="username">Name</label>
-        <div>
-          <input
-            type="text"
-            name="username"
-            class="all-1"
-            placeholder="Enter your name"
-            id="username"
-          />
-          <span id="username2" class="error"></span>
-        </div>
-
-        <label class="label-1" for="email">Email</label>
-        <div>
-          <input
-            type="email"
-            name="email"
-            class="all-1"
-            placeholder="Enter your email"
-            id="emailuser"
-          />
-          <span id="emailuser2" class="error"></span>
-        </div>
-
-        <label class="label-1" for="age">Age</label>
-        <div>
-          <input
-            type="number"
-            name="age"
-            class="all"
-            placeholder="Enter your age"
-            id="age"
-          />
-        </div>
-
-        <label class="label-1" for="date">Date of birth</label>
-        <div>
-          <input
-            type="text"
-            id="ngaysinh"
-            name="ngaysinh"
-            placeholder="nn/tt/nnnn"
-            class="all-1"
-          />
-          <span id="ngaysinh2" class="error"></span>
-        </div>
-
-        <label for="gioitinh" class="label-1">Giới tính</label>
-        <div class="radio-text">
-          <label class="radio-content">
-            <input type="radio" name="gioitinh" id="nam" checked="checked" />
-            Nam
-
-            <span class="checkmark"></span>
-            <span class="checkmark2"></span>
-          </label>
-
-          <label class="radio-content">
-            <input type="radio" name="gioitinh" id="nu" checked="checked" />
-            Nữ
-            <span class="checkmark"></span>
-            <span class="checkmark2"></span>
-          </label>
-        </div>
-
-        <label class="label-1">Tên sử dụng</label>
-        <div>
-          <input
-            type="text"
-            name="nameuser"
-            id="nameuser"
-            placeholder="Nhập tên sử dụng của bạn"
-            onkeyup="javascript:nextStep(event, this, 'pass');"
-          />
-          <span id="nameuser2" class="error"></span>
-        </div>
-
-        <label class="label-1">Mật khẩu</label>
-        <div>
-          <input
-            type="password"
-            name="pass"
-            id="pass"
-            placeholder="Nhập mật khẩu của bạn"
-            onkeyup="javascript:nextStep(event, this, 'repass');"
-          />
-          <span id="wrong_pass" class="error"></span>
-        </div>
-
-        <label class="label-1">Xác nhận lại mật khẩu</label>
-
-        <div>
-          <input
-            type="password"
-            name="repass"
-            id="repass"
-            placeholder="Xác nhận lại mật khẩu"
-            onkeyup="javascript: nextStep(event, this, 'job');"
-          />
-          <span id="wrong_repass" class="error"></span>
-        </div>
-
-        <label class="label-1" for="question"
-          >Which options best describes you?</label
-        >
-        <div>
-          <select name="option" class="all" id="job">
-            <option value="st">Student</option>
-            <option value="tch">Teacher</option>
-            <option value="mt">Master</option>
-            <option value="dt">Doctor</option>
-            <option
-              onkeyup="javascript: nextStep(event, this, 'yes');"
-              value="prf"
-            >
-              Professor
-            </option>
-          </select>
-        </div>
-
-        <label class="label-1" for="question"
-          >Would you recommend GeekforGeeks to a friend?</label
-        >
-
-        <div class="yes-no">
-          <input
-            name="yes/no"
-            type="radio"
-            id="yes"
-            onkeyup="javascript: nextStep(event, this, 'no');"
-          />
-          <label for="yes">Yes</label><br />
-          <input
-            name="yes/no"
-            type="radio"
-            id="no"
-            onkeyup="javascript: nextStep(event, this, 'maybe');"
-          />
-          <label for="no">No</label><br />
-          <input
-            name="yes/no"
-            type="radio"
-            id="maybe"
-            onkeyup="javascript: nextStep(event, this, '');"
-          />
-          <label for="maybe">Maybe</label>
-        </div>
-
-        <label class="label-1" for="question"
-          >Languages and Framework known</label
-        >
-        <label class="label-1" id="text" for="text"
-          >(Check all that apply)</label
-        >
-
-        <div class="checkbox">
-          <input type="checkbox" name="langueges/framework" />
-          <label>C</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>C++</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>C#</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>Java</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>Python</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>JavaScript</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>React</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>Angular</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>Django</label><br />
-          <input type="checkbox" name="langueges/framework" />
-          <label>Spring</label>
-        </div>
-
-        <label class="label-1" for="comment">Any comments or suggestions</label>
-
-        <div>
-          <textarea name="comment" id="comment"></textarea>
-        </div>
-
-        <div>
-          <label>&nbsp;</label>
-          <img class="preview nodisplay" src="" style="height: 200px" />
-          <br />
-        </div>
-
-        <label class="label-1">Ảnh chân dung</label>
-        <div>
-          <input
-            type="file"
-            name="uploadfile"
-            id="upload"
-            accept=".png, .jpg"
-          />
-        </div>
-        <input
-          class="button"
-          type="button"
-          onclick="javascript: Submit();"
-          value="Submit"
-        />
-        <input
-          class="button"
-          type="button"
-          onclick="javascript: Pass();"
-          value="Pass"
-        />
-        <br />
-      </form>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào mừng đến với trang web của Thùy Linh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert("Cảm ơn bạn đã ghé thăm trang web của Thùy Linh!");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng đến với trang web của Thùy Linh</h1>
+        <p>Trang web này đang trong quá trình phát triển. Hãy quay lại sau nhé!</p>
+        <button onclick="showMessage()">Nhấn vào đây</button>
     </div>
-
-    <script type="text/javascript" src="tl1.js"></script>
-  </body>
+</body>
 </html>

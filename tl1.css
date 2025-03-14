@@ -1,0 +1,191 @@
+body {
+    background-image: url(image/2.png);
+    background-size: cover;
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff5cd;
+    padding: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #6482ad;
+    box-sizing: border-box;
+  }
+  
+  .all {
+    width: 97.5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    border: 2px solid #e78f81;
+    background-color: #ffecc8;
+    outline: none;
+  }
+  
+  .all:hover {
+    background-color: #ffcf9d;
+  }
+  
+  .all-1 {
+    width: 97.5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    border: 2px solid #e78f81;
+    background-color: #dff2eb;
+    outline: none;
+  }
+  
+  .all-1:hover {
+    background-color: #b9e5e8;
+  }
+  
+  #nameuser {
+    width: 97.5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    border: 2px solid #e78f81;
+    background-color: #dff2eb;
+    outline: none;
+  }
+  
+  #nameuser:hover {
+    background-color: #b9e5e8;
+  }
+  
+  #pass {
+    width: 97.5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    border: 2px solid #e78f81;
+    background-color: #dff2eb;
+    outline: none;
+  }
+  
+  #pass:hover {
+    background-color: #b9e5e8;
+  }
+  
+  #repass {
+    width: 97.5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    border: 2px solid #e78f81;
+    background-color: #dff2eb;
+    outline: none;
+  }
+  
+  #repass:hover {
+    background-color: #b9e5e8;
+  }
+  
+  .yes-no {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-bottom: 10px;
+  }
+  
+  .checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-bottom: 10px;
+  }
+  
+  #comment {
+    width: 97.5%;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    border: 2px solid #e78f81;
+    background-color: #ffecc8;
+    outline: none;
+    overflow: auto;
+    resize: vertical;
+  }
+  
+  .button {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #ffecc8;
+    border: 2px solid #e78f81;
+    color: #6482ad;
+  }
+  
+  form span.error {
+    color: #c62e2e;
+  }
+  
+  input:placeholder-shown {
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+  
+  #text {
+    font-size: 70%;
+  }
+  
+  .label-1 {
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #ffb0b0;
+  }
+  
+  .all:focus {
+    border: 2px solid #e78f81;
+  }
+  
+  #comment:focus {
+    border: 2px solid #e78f81;
+  }
+  .radio-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .all {
+      width: 95%;
+    }
+  
+    #comment {
+      width: 95%;
+    }
+  }
+  
